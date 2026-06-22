@@ -2,7 +2,7 @@ nav ul{
     list-style-type:none ;  /* Bullets hatane ke liye */
     padding: 0%;
     display: flex;
-    gap: 60px;
+    gap: 40px;
     justify-content: center;
 }
 body{
@@ -35,14 +35,21 @@ h2{
     border-radius: 4px;
 }
 
-.search-container button{
-    padding: 10px 20px;
-    color: white;
-    cursor: pointer;
-    border: none;
+.search-container button {
+    width: 60px;               /* Button ki width fix karein */
+    height: 42px;              /* Input height ke barabar */
     background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    display: flex;             /* Icon ko center mein laane ke liye */
+    align-items: center;
+    justify-content: center;
 }
 
+.search-container button i {
+    font-size: 20px;
+}
 .main{
     display: flex;
     align-items: center;
