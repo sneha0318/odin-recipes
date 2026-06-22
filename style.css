@@ -4,3 +4,8 @@ nav ul{
     display: flex;
     gap: 20px;
 }
+body{
+    background-color: white;
+    border: 2px solid white;;
+}
+
