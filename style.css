@@ -129,3 +129,29 @@ h2{
     color: blue;
     text-decoration: underline black;
 }
+
+.yellow-label{
+    width: 100%;
+    display: block;
+    background-color: #ffda5a;
+    font-family: sans-serif;
+    padding: 20px 0;
+    font-weight: bold;
+    position: relative;
+    margin-top: 10px;
+    text-align: center;
+    text-decoration: underline black;
+}
+
+.yellow-label p{
+    margin: 0px;
+    font-size:17px;
+    
+}
+
+.close-icon{
+    margin-left: 15px;
+    cursor: pointer;
+    font-size: 18px;
+    vertical-align: middle;
+}
