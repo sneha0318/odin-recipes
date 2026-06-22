@@ -77,3 +77,22 @@ h2{
    text-decoration: underline;
    color: blue;
 }
+
+.my-recipes-link{
+    display: flex;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+}
+
+.text-my{
+    color: #ff3399;
+}
+
+.text-recipes{
+    color: black;
+}
+
