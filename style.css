@@ -62,8 +62,9 @@ h2{
 
 .header-Extra{
     display: flex;
-    gap: 15px;
-    font-size: 14px;
+    gap: 20px;
+    font-size: 17px;
+    margin-left: auto;
 }
 
 .header-Extra a{
@@ -71,6 +72,7 @@ h2{
     color: black ;
     display: inline-block;
     border: none;
+    
 }
 
 .header-Extra a:hover {
