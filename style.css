@@ -1,8 +1,8 @@
 nav ul{
-    list-style-type:none ;
+    list-style-type:none ;  /* Bullets hatane ke liye */
     padding: 0%;
     display: flex;
-    gap: 60px;
+    gap: 40px;
     justify-content: center;
 }
 body{
@@ -11,13 +11,52 @@ body{
 }
 
 nav a{
-    text-decoration: none;
+    text-decoration: none;     /* Link ke neeche ki underline hatane ke liye */
     color: black;
     font-weight: bold ;
-    
+    text-transform: uppercase;   /* Text ko capital letters mein karne ke liye */
 }
 
 h2{
     color:blue;
     font-family:sans-serif;
 }
+
+.search-container{
+    text-align: center;
+    margin:  0;
+    display: flex;
+}
+
+.search-container input{
+    width: 400px;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+.search-container button{
+    padding: 10px 20px;
+    color: white;
+    cursor: pointer;
+    border: none;
+    background-color: blue;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    padding: 20px;
+}
+
+.main-header {
+    display: flex;
+    flex-direction: row;    /* Sab ek line mein aayenge */
+   justify-content: flex-start; 
+    align-items: center;
+    padding: 20px;
+    gap: 60px;
+}
+
