@@ -60,3 +60,13 @@ h2{
     gap: 60px;
 }
 
+.header-Extra{
+    display: flex;
+    gap: 15px;
+    font-size: 14px;
+}
+
+.header-extra a{
+    text-decoration: none !important;
+    color: black !important;
+}
