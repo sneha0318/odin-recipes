@@ -15,8 +15,14 @@ nav a{
     color: black;
     font-weight: bold ;
     text-transform: uppercase;   /* Text ko capital letters mein karne ke liye */
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s;
 }
 
+nav a:hover{
+    color: black;
+    border-bottom: 1px solid blue;
+}
 
 h2{
     color:blue;
