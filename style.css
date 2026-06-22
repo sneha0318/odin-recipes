@@ -155,3 +155,79 @@ h2{
     font-size: 18px;
     vertical-align: middle;
 }
+
+.ad-banner {
+    background-color: #1a1a1a;
+    color: white;
+    padding: 10px 50px;
+    display: flex;            /* Flex enable kiya */
+    flex-direction: column;   /* Items ko upar-neeche stack karega */
+    align-items: center;      /* Dono items ko beech mein center karega */
+    justify-content: center;
+}
+.ad-container {
+    max-width: 900px;       /* Banner ki maximum width limit */
+    width: 90%;             /* Screen ke hisab se responsive rahega */
+    display: flex;
+    align-items: center;
+    color: white;
+}
+
+
+
+.ad-content {
+    text-align: left; /* Text ko left-align karega */
+    margin: 0 30px;    /* Advertisement labels se gap */
+}
+
+.ad-title {
+    color: white;
+    font-size: 28px;    /* Bada, bold text */
+    font-weight: bold;
+    margin: 0;
+    text-transform: uppercase;
+}
+
+.company-name {
+    margin: 5px 0 0 0;        /* Main text aur iske beech thodi jagah */
+    font-size: 14px;
+    color: white;
+}
+
+.ad-label {
+    writing-mode: vertical-rl; /* Text ko khada (vertical) karne ke liye */
+    font-size: 10px;
+    color: #888;
+    text-transform: uppercase;
+}
+
+.ad-wrapper {
+    position: relative; /* Labels ko bahar nikalne ke liye zaroori */
+    display: flex;
+    justify-content: center;
+    margin: 40px auto;  /* Upar-neeche space aur center */
+    width: fit-content; /* Wrapper sirf content ki width lega */
+}
+
+
+
+.ad-label {
+    position: absolute; /* Box se bahar position karne ke liye */
+    writing-mode: vertical-rl;
+    font-size: 10px;
+    color: #888;
+    top: 50%;
+    transform: translateY(-50%); /* Vertical center */
+}
+
+.ad-label.left { left: -20px; }  /* Box ke left mein */
+.ad-label.right { right: -20px; } /* Box ke right mein */
+
+.yellow-text { color: #ffd700; }
+
+.ad-banner h2 {
+    color: white; /* Blue hatakar white color set kiya */
+    margin: 0;
+    font-size: 29px;
+    text-transform: uppercase;
+}
