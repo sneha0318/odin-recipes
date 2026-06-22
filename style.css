@@ -17,6 +17,7 @@ nav a{
     text-transform: uppercase;   /* Text ko capital letters mein karne ke liye */
 }
 
+
 h2{
     color:blue;
     font-family:sans-serif;
@@ -105,3 +106,20 @@ h2{
     color: black;
 }
 
+/* Normal state */
+.mag-link {
+    color: inherit; 
+    text-decoration: none;
+}
+
+/* Jab click karein (active state) */
+.mag-link:active {
+    color: blue !important;                /* Click karte hi blue color */
+    text-decoration: underline black !important; /* Black underline */
+}
+
+/* Agar aap chahti hain ki mouse le jaane par bhi yahi ho, toh :hover use karein */
+.mag-link:hover {
+    color: blue;
+    text-decoration: underline black;
+}
