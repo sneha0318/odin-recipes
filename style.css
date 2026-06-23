@@ -1,41 +1,43 @@
-nav ul{
-    list-style-type:none ;  /* Bullets hatane ke liye */
+nav ul {
+    list-style-type: none;
     padding: 0%;
     display: flex;
     gap: 40px;
     justify-content: center;
 }
-body{
+
+body {
     background-color: white;
-    border: 2px solid white;;
+    border: 2px solid white;
 }
 
-nav a{
-    text-decoration: none;     /* Link ke neeche ki underline hatane ke liye */
+nav a {
+    text-decoration: none;
     color: black;
-    font-weight: bold ;
-    text-transform: uppercase;   /* Text ko capital letters mein karne ke liye */
+    font-weight: bold;
+    text-transform: uppercase;
     border-bottom: 1px solid transparent;
     transition: border-color 0.3s;
 }
 
-nav a:hover{
+nav a:hover {
     color: black;
     border-bottom: 1px solid blue;
 }
 
-h2{
-    color:blue;
-    font-family:sans-serif;
+h2 {
+    color: blue;
+    font-family: sans-serif;
 }
 
-.search-container{
+.search-container {
     text-align: center;
     margin: 10px;
     display: flex;
+    justify-content: center;
 }
 
-.search-container input{
+.search-container input {
     width: 400px;
     padding: 10px;
     border: 1px solid black;
@@ -43,13 +45,13 @@ h2{
 }
 
 .search-container button {
-    width: 60px;               /* Button ki width fix karein */
-    height: 42px;              /* Input height ke barabar */
+    width: 60px;
+    height: 42px;
     background-color: blue;
     color: white;
     border: none;
     cursor: pointer;
-    display: flex;             /* Icon ko center mein laane ke liye */
+    display: flex;
     align-items: center;
     justify-content: center;
 }
@@ -57,7 +59,8 @@ h2{
 .search-container button i {
     font-size: 20px;
 }
-.main{
+
+.main {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -67,34 +70,33 @@ h2{
 
 .main-header {
     display: flex;
-    flex-direction: row;    /* Sab ek line mein aayenge */
-   justify-content: flex-start; 
+    flex-direction: row;
+    justify-content: flex-start;
     align-items: center;
     padding: 20px;
     gap: 180px;
 }
 
-.header-Extra{
+.header-Extra {
     display: flex;
     gap: 20px;
     font-size: 17px;
     margin-left: auto;
 }
 
-.header-Extra a{
-   text-decoration: none;
-    color: black ;
+.header-Extra a {
+    text-decoration: none;
+    color: black;
     display: inline-block;
     border: none;
-    
 }
 
 .header-Extra a:hover {
-   text-decoration: underline;
-   color: blue;
+    text-decoration: underline;
+    color: blue;
 }
 
-.my-recipes-link{
+.my-recipes-link {
     display: flex;
     font-family: sans-serif;
     font-weight: bold;
@@ -104,33 +106,14 @@ h2{
     font-size: 15px;
 }
 
-.text-my{
-    color: #ff3399;
-}
+.text-my { color: #ff3399; }
+.text-recipes { color: black; }
 
-.text-recipes{
-    color: black;
-}
+.mag-link { color: inherit; text-decoration: none; }
+.mag-link:active { color: blue !important; text-decoration: underline black !important; }
+.mag-link:hover { color: blue; text-decoration: underline black; }
 
-/* Normal state */
-.mag-link {
-    color: inherit; 
-    text-decoration: none;
-}
-
-/* Jab click karein (active state) */
-.mag-link:active {
-    color: blue !important;                /* Click karte hi blue color */
-    text-decoration: underline black !important; /* Black underline */
-}
-
-/* Agar aap chahti hain ki mouse le jaane par bhi yahi ho, toh :hover use karein */
-.mag-link:hover {
-    color: blue;
-    text-decoration: underline black;
-}
-
-.yellow-label{
+.yellow-label {
     width: 100%;
     display: block;
     background-color: #ffda5a;
@@ -143,91 +126,121 @@ h2{
     text-decoration: underline black;
 }
 
-.yellow-label p{
-    margin: 0px;
-    font-size:17px;
-    
-}
+.yellow-label p { margin: 0px; font-size: 17px; }
 
-.close-icon{
-    margin-left: 15px;
-    cursor: pointer;
-    font-size: 18px;
-    vertical-align: middle;
-}
+.close-icon { margin-left: 15px; cursor: pointer; font-size: 18px; vertical-align: middle; }
 
 .ad-banner {
     background-color: #1a1a1a;
     color: white;
     padding: 10px 50px;
-    display: flex;            /* Flex enable kiya */
-    flex-direction: column;   /* Items ko upar-neeche stack karega */
-    align-items: center;      /* Dono items ko beech mein center karega */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
+
 .ad-container {
-    max-width: 900px;       /* Banner ki maximum width limit */
-    width: 90%;             /* Screen ke hisab se responsive rahega */
+    max-width: 900px;
+    width: 90%;
     display: flex;
     align-items: center;
     color: white;
 }
 
-
-
-.ad-content {
-    text-align: left; /* Text ko left-align karega */
-    margin: 0 30px;    /* Advertisement labels se gap */
-}
-
-.ad-title {
-    color: white;
-    font-size: 28px;    /* Bada, bold text */
-    font-weight: bold;
-    margin: 0;
-    text-transform: uppercase;
-}
-
-.company-name {
-    margin: 5px 0 0 0;        /* Main text aur iske beech thodi jagah */
-    font-size: 14px;
-    color: white;
-}
-
-.ad-label {
-    writing-mode: vertical-rl; /* Text ko khada (vertical) karne ke liye */
-    font-size: 10px;
-    color: #888;
-    text-transform: uppercase;
-}
+.ad-content { text-align: left; margin: 0 30px; }
+.ad-title { color: white; font-size: 28px; font-weight: bold; margin: 0; text-transform: uppercase; }
+.company-name { margin: 5px 0 0 0; font-size: 14px; color: white; }
 
 .ad-wrapper {
-    position: relative; /* Labels ko bahar nikalne ke liye zaroori */
+    position: relative;
     display: flex;
     justify-content: center;
-    margin: 40px auto;  /* Upar-neeche space aur center */
-    width: fit-content; /* Wrapper sirf content ki width lega */
+    margin: 40px auto;
+    width: fit-content;
 }
 
-
-
 .ad-label {
-    position: absolute; /* Box se bahar position karne ke liye */
+    position: absolute;
     writing-mode: vertical-rl;
     font-size: 10px;
     color: #888;
     top: 50%;
-    transform: translateY(-50%); /* Vertical center */
+    transform: translateY(-50%);
 }
 
-.ad-label.left { left: -20px; }  /* Box ke left mein */
-.ad-label.right { right: -20px; } /* Box ke right mein */
-
+.ad-label.left { left: -20px; }
+.ad-label.right { right: -20px; }
 .yellow-text { color: #ffd700; }
+.ad-banner h2 { color: white; margin: 0; font-size: 29px; text-transform: uppercase; }
 
-.ad-banner h2 {
-    color: white; /* Blue hatakar white color set kiya */
+.content-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.main-article img { width: 100%; }
+.main-article h2 { color: black; }
+.main-article h2:hover {
+    text-decoration: underline 1px blue; /* Hover karne par underline aayegi */
+    cursor: pointer;      /* Cursor arrow se hath (pointer) ban jayega */
+}
+
+/* FIXED SIDEBAR SECTION */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+    border-left: 1px solid #eee;
+}
+
+.sidebar h1 {
+    color: #1a1a1a;
+    text-decoration: underline 3px blue;
+}
+
+.latest-post {
+    display: flex !important; 
+    flex-direction: row !important;
+    align-items: flex-start !important;
+    gap: 20px !important;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 30px;
+    width: 100%;
+}
+.thumb {
+    width: 100px;             /* Image ki fixed width */
+    height: 70px;             /* Image ki fixed height */
+    object-fit: cover;
+    flex-shrink: 0;           /* Yeh bahut zaruri hai taaki image ka size na badle */
+}
+
+.post-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1; /* Ye text ko bachi hui jagah lene ke liye force karega */
+    min-width: 0; /* Ye fix karega ki text image ke neeche na kude */
+}
+
+.post-text h5 {
+    margin: 5px 0 0 0;
+    font-size: 15px;
+    line-height: 1.3;
+}
+
+.meta {
+    font-size: 11px;
+    color: #666;
     margin: 0;
-    font-size: 29px;
-    text-transform: uppercase;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 10px 0;
 }
